@@ -5,6 +5,7 @@ def reformat_languages(languages)
     # language[:style] = [] << style
     language.each { |name, attributes|
       if new_hash[name] == nil
+        attributes[:style] = [style]
         
       end
       new_hash[name] = attributes
